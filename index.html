@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Es hoy el Día de la Independencia de Colombia?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app" aria-live="polite">
+    <div class="content" id="content">
+      <p class="headline" id="headline" aria-label="Resultado"></p>
+      <p class="subtext" id="subtext"></p>
+      <button class="hymn-button hidden" id="playButton" type="button">
+        Reproducir himno
+      </button>
+    </div>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+  </main>
+
+  <footer class="debug" aria-live="polite">
+    <span id="debugDate"></span>
+    <span aria-hidden="true"> · </span>
+    <span id="debugTimezone"></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
